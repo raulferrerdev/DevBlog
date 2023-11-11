@@ -19,7 +19,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "cms-proxy-server": "npx @staticcms/proxy-server",
-    "dev:demo": "cross-env BLOG_SLUG=blog PORTFOLIO_SLUG=work SHOP_SLUG=shop MENU_SLUG=menu WEBSITE_LANGUAGE=en CURRENCY=USD UNITS=metric NODE_VERSION=18 SNIPCART_KEY=ZDVjZmQwYmUtMzNlYy00OGEyLTkxMTItMTg4YTI5NGQxN2I3NjM4MjgzOTQyMzA2MTM1NjI1 astro dev"
+    "dev:demo": "cross-env BLOG_SLUG=blog COMPARATIVE_SLUG=comparative PRIVACY_SLUG=private-policy PORTFOLIO_SLUG=work SHOP_SLUG=shop MENU_SLUG=menu WEBSITE_LANGUAGE=en CURRENCY=USD UNITS=metric NODE_VERSION=18 SNIPCART_KEY=ZDVjZmQwYmUtMzNlYy00OGEyLTkxMTItMTg4YTI5NGQxN2I3NjM4MjgzOTQyMzA2MTM1NjI1 astro dev"
   },
   "dependencies": {
     "@astrojs/check": "^0.2.1",
@@ -39,6 +39,7 @@
     "astro": "^3.3.3",
     "astro-compress": "^2.1.5",
     "astro-critters": "^2.0.11",
+    "astro-embed": "^0.6.0",
     "astro-icon": "^0.8.1",
     "astro-imagetools": "^0.9.0",
     "astro-m2dx": "^0.7.16",

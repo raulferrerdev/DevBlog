@@ -44,9 +44,121 @@ export const settings = {
     },
 
     {
+      name: "private-policy",
+      label: t("private-policy"),
+      file: "src/content/config/private-policy.mdx",
+
+      fields: [
+        { name: "sitename", label: t("site_name"), widget: "string" },
+        { name: "intro", label: t("intro"), widget: "markdown" },
+        { name: "footer_text", label: t("footer_text"), widget: "markdown" },
+
+        {
+          name: "newsletter_text",
+          label: t("newsletter_text"),
+          widget: "markdown",
+          required: false,
+        },
+        {
+          name: "team",
+          label: t("team"),
+          widget: "list",
+          collapsed: true,
+          fields: [
+            { name: "name", label: t("name"), widget: "string" },
+            { name: "position", label: t("position"), widget: "string" },
+            { name: "thumbnail", label: t("photo"), widget: "image" },
+          ],
+        },
+      ],
+    },
+
+    {
       name: "blog",
       label: t("blog_settings"),
       file: "src/content/config/blog.mdx",
+
+      fields: [
+        { name: "title", label: t("title"), widget: "string" },
+        { name: "description", label: t("description_seo"), widget: "text" },
+        { name: "intro", label: t("intro"), widget: "markdown" },
+        {
+          name: "per_page",
+          label: t("items_per_page"),
+          widget: "number",
+          default: 10,
+          value_type: "int",
+          min: 2,
+          max: 100,
+          step: 1,
+        },
+        {
+          name: "hero_buttons",
+          label: t("hero_buttons"),
+          label_singular: "Button",
+          widget: "list",
+          collapsed: true,
+          summary: "{{fields.label}} | {{fields.href}}",
+          fields: buttons.fields,
+          required: false,
+        },
+
+        {
+          name: "blog_tags",
+          label: t("tags"),
+          widget: "list",
+          required: false,
+          collapsed: true,
+          fields: [
+            { name: "name", label: t("name"), widget: "string" },
+            { name: "title", label: t("title"), widget: "string" },
+            {
+              name: "description",
+              label: t("description_seo"),
+              widget: "text",
+            },
+            {
+              name: "intro",
+              label: t("hero_intro"),
+              widget: "text",
+              required: false,
+            },
+            {
+              name: "body",
+              label: t("body"),
+              widget: "markdown",
+              required: false,
+              show_raw: true,
+            },
+            {
+              name: "hero_buttons",
+              label: t("hero_buttons"),
+              label_singular: "Button",
+              widget: "list",
+              collapsed: true,
+              summary: "{{fields.label}} | {{fields.href}}",
+              fields: buttons.fields,
+              required: false,
+            },
+            { name: "thumbnail", label: t("image"), widget: "image" },
+          ],
+        },
+        style,
+
+        { name: "thumbnail", label: t("image"), widget: "image" },
+        {
+          label: t("og_image"),
+          name: "og_image",
+          widget: "image",
+          required: false,
+          hint: t("label_og_image"),
+        },
+      ],
+    },
+    {
+      name: "comparative",
+      label: t("comparative_settings"),
+      file: "src/content/config/comparative.mdx",
 
       fields: [
         { name: "title", label: t("title"), widget: "string" },
