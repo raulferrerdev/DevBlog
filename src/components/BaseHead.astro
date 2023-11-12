@@ -34,6 +34,21 @@ const pageTitle = `${title} | ${data.sitename}`;
 <link rel="canonical" data-pagefind-meta="url[href]" href={canonicalURL} />
 <link rel="sitemap" href="/sitemap-index.xml" />
 
+<!-- Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-GT7TFLR19R"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-XXXXXXXXXX");
+</script>
+
 <!-- Primary Meta Tags -->
 <title>{pageTitle}</title>
 <meta name="title" content={pageTitle} />

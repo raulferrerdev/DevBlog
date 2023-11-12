@@ -50,6 +50,10 @@ if (page_type === "comparative") {
     );
 }
 
+if (page_type === "private-policy") {
+  base_url = import.meta.env.PRIVACY_SLUG;
+}
+
 if (page_type === "menu") {
   base_url = import.meta.env.MENU_SLUG;
   posts = (await getCollection("menu")).sort(

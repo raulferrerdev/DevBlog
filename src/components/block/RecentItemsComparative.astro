@@ -43,6 +43,10 @@ if (page_type === "menu") {
   );
 }
 
+if (page_type === "private-policy") {
+  base_url = import.meta.env.PRIVACY_SLUG;
+}
+
 if (page_type === "project") {
   base_url = import.meta.env.PORTFOLIO_SLUG;
   posts = (await getCollection("project")).sort(

@@ -2,6 +2,7 @@
   "env": {
     "BLOG_SLUG": "blog",
     "COMPARATIVE_SLUG": "comparative",
+    "RESOURCES_SLUG": "resources",
     "PRIVACY_SLUG": "private-policy",
     "PORTFOLIO_SLUG": "work",
     "SHOP_SLUG": "shop",
