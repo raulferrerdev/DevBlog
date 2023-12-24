@@ -1,0 +1,80 @@
+---
+tag:
+  - Fsharp
+title: Exploring F# (Fsharp language). A Novel Learning Journey
+description: I'll share my motivations, setting up a dev environment tailored for F# (Fsharp language), writing those critical first lines of code, and how F# allows me to approach problems in new ways.
+intro: A comprehensive overview on a F sharp learning journey.
+style:
+  template: full
+  card_template: grid
+  hero_template: image
+  hero_image_opacity: ""
+  container: md
+pubDate: 2023-12-24T15:59:01.000+02:00
+thumbnail: /src/assets/f-sharp-intro.png
+og_image: /src/assets/f-sharp-intro.png
+
+---
+
+## Introduction to F# (F sharp language)
+I feel a tangible sense of excitement and wonder growing within me as I venture into the realm of F# (Fsharp language). How did this functional-first language make its way into the wide world of computer languages and what makes it stand out from the competition?
+
+F# (Fsharp language) didn't appear out of thin air. It was developed in the Microsoft Research hallways, influenced by programming languages such as ML. The goal of this painstakingly created language was to smoothly combine object-oriented and functional programming into a cohesive whole. Knowing this historical background gives my trip more depth because it explains how F# was developed with creativity and the goal of creating expressive, adaptable code.
+
+Equipped with this historical context, I ventured out into the great Functional Seas, eager to discover the home of F#. It is a flexible tool utilized in web development, scientific computing, banking, and other fields rather than being limited to just one. The idea of investigating its uses in various real-world contexts gives my educational journey a practical edge.
+
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
+<div style="width: 25%; align-items: center;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerbl0a-20&language=es_US&marketplace=amazon&region=US&placement=B0BSHF7LLL&asins=B0BSHF7LLL&linkId=394e031b2ee91c93eb624b699c13cda7&show_border=true&link_opens_in_new_window=true"></iframe></div>
+<div style="width: 25%; align-items: center;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerbl0a-20&language=es_US&marketplace=amazon&region=US&placement=B0C6GB1FNB&asins=B0C6GB1FNB&linkId=19dc9815c1d23c672a5780c556d8bb37&show_border=true&link_opens_in_new_window=true"></iframe></div>
+<div style="width: 25%; align-items: center;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerbl0a-20&language=es_US&marketplace=amazon&region=US&placement=B0CN9RFFVT&asins=B0CN9RFFVT&linkId=cea4efa29d6c0c0a313ee5ea775fc920&show_border=true&link_opens_in_new_window=true"></iframe></div>
+<div style="width: 25%; align-items: center;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerbl0a-20&language=es_US&marketplace=amazon&region=US&placement=B0C532H5S7&asins=B0C532H5S7&linkId=7666f7efe9749357cde0e3b1961f7c55&show_border=true&link_opens_in_new_window=true"></iframe></div>
+</div>
+
+## Establishing the Bases: First Steps in F#
+
+### Setting Up the Development Environment and Installing the Tools
+I get my hands dirty and tackle the details of setting up my development environment and installing the F# (Fsharp) tools.
+
+Installing the F# (Fsharp) compiler and tools is the first step. I choose the cross-platform, open-source [**.NET SDK**](https://learn.microsoft.com/en-us/dotnet/core/install/macos) because it comes with everything I need to begin developing and executing F# (Fsharp) code. It's quick and easy thanks to the installation.
+
+I then configured Visual Studio Code to serve as my go-to light code editor. I install the great [**Ionide plugin**](https://ionide.io) in VS Code, which gives me IDE-like capabilities for F# (Fsharp) work. Right out of the box, code formatting, auto-completion, and useful code snippets are available.
+
+I obtain a copy of the [**Paket dependency management**](https://fsprojects.github.io/Paket/) to round out my toolset. Later on, referencing external F# (Fsharp) libraries and frameworks will be simple thanks to this. But don't delve right into external dependencies just yet!
+
+Installing these essential tools has prepared my environment to write clear and concise F# (Fsharp) code. I have no trouble creating, assembling, and running F# (Fsharp) projects and scripts. With the editor's seamless integration with the F# (Fsharp) compiler, I can code efficiently.
+
+Setting up a customized development environment is quite satisfying. It's the canvas that will allow my adventure of learning F# to blossom, logical line after logical line. On this canvas, I can't wait to begin creating my first F# masterpieces!
+
+
+## The Excitement of Running My First F# Program
+
+After getting everything ready, I start writing my first F# code. There are no lofty metaphors here; it's just a mixture of nervousness and youthful enthusiasm. Even though the syntax is different from what I'm used to, after I get the hang of it, it makes sense. This is a picture of that wonderful moment:
+
+```fsharp
+// Define a record type to store book information
+type Book = {
+  Title: string
+  Author: string
+  Pages: int
+}
+
+// Define a function to create a new book
+let createBook title author pages = 
+  { Title = title; Author = author; Pages = pages }
+
+// Create a new book instance
+let myBook = createBook "F# for Dummies" "John Smith" 432
+
+// Print the book title 
+printfn "Title: %s" myBook.Title
+```
+
+It's a step toward adopting a new way of thinking, not just code on a screen. It's pleasant to be able to express computations simply and noise-free. This is about writing right and succinct code, not about following a paradigm for its own reason.
+
+## Conclusion
+
+The excitement comes from the practical applications, real-world problem-solving, and the progressive mastery of a language formed by inventive history as I venture farther into the Functional Seas of F#. Learning syntax is only one aspect of it; another is picking up new skills to deal with the dynamic world of software development. The trip has barely just started!
