@@ -1,1 +1,4 @@
 Sitemap: https://raulferrer.dev/sitemap-index.xml
+
+User-agent: *
+Disallow: /images/
