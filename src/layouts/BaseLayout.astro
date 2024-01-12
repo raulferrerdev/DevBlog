@@ -77,30 +77,7 @@ const privatepolicy = await getEntry("config", "private-policy");
           />
         )
       }
-      <Picture
-        slot="image"
-        src={contact.data.form.thumbnail}
-        alt={`contact`}
-        sizes="50vw"
-        aspect={4 / 5}
-        format={["webp"]}
-        fit="cover"
-        layout="fill"
-        placeholder="blurred"
-        position="attention"
-        loading="lazy"
-        sizes="(max-width: 768px) 100vw, 40vw"
-        breakpoints={[420, 725, 960]}
-        artDirectives={[
-          {
-            media: "(max-width: 768px)",
-            ar: 21 / 9,
-            src: contact.data.form.thumbnail,
-            layout: "constrained",
-            breakpoints: [500, 601, 768, 820, 962, 1280, 1440, 1536, 1920],
-          },
-        ]}
-      />
+      
       <Icon name="close" class="w-6" />
     </ContactDialog>
 
@@ -117,6 +94,16 @@ const privatepolicy = await getEntry("config", "private-policy");
       };
       SmoothScroll();
       document.addEventListener("astro:beforeload", SmoothScroll);
+    </script>
+    <script type="text/javascript">
+      atOptions = {
+        'key' : 'b618e78142ee5d87a77d4c8f6c3edf65',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/b618e78142ee5d87a77d4c8f6c3edf65/invoke.js"></scr' + 'ipt>');
     </script>
   </body>
 </html>
